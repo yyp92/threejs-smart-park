@@ -72,6 +72,26 @@ export default class City {
       this.action = this.mixer.clipAction(this.clip);
       this.action.play();
     });
+
+    // 如何切换控制器聚焦位置和拉近视角
+    // eventHub.on('focusDance', () => {
+    //   this.womenPosition = this.women.position.clone()
+
+    //   gsap.to(ControlsModule.controls.target, {
+    //     x: this.womenPosition.x,
+    //     y: this.womenPosition.y,
+    //     z: this.womenPosition.z,
+    //     duration: 1,
+    //     onComplete: () => {
+    //       gsap.to(cameraModule.activeCamera.position, {
+    //         x: this.womenPosition.x + 3,
+    //         y: this.womenPosition.y + 2,
+    //         z: this.womenPosition.z + 1,
+    //         duration: 2,
+    //       })
+    //     }
+    //   })
+    // })
   }
 
   update(time) {
